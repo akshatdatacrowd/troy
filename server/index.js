@@ -10,12 +10,19 @@ const app = express();
 
 connectDB();
 
-app.use('/graphql', graphqlHTTP({
+app.use(
+  "/graphql",
+  graphqlHTTP({
     schema,
-    graphiql: process.env.NODE_ENV === 'development' || True,
-}));
+    graphiql: process.env.NODE_ENV === "development" || True,
+  })
+);
 
 app.listen(port, () => {
   console.clear();
-  console.log(colors.yellow(`\nServer is running on port ${port} -> Happy coding!\n`));
+  console.log(
+    colors.yellow(
+      `\nServer is running on port ${port} -> Happy coding!\n Happy coding!\n`
+    )
+  );
 });
