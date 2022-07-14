@@ -10,8 +10,6 @@ const app = express();
 
 connectDB();
 
-// MongoDB user akshat pass CYSPOBW2RiEPRmX6 
-
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: process.env.NODE_ENV === 'development'
