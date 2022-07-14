@@ -22,7 +22,7 @@ app.listen(port, () => {
   console.clear();
   console.log(
     colors.yellow(
-      `\nServer is running on port ${port} -> Happy coding!\n Happy coding!\n`
+      `\nServer is running on port ${port} -> Happy coding!\n Happy hello coding!\n`
     )
   );
 });
